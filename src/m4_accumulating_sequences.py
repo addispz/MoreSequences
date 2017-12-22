@@ -29,7 +29,7 @@ def main():
 def run_test_make_simple_list():
     """ Tests the   make_simple_list    function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  make_simple_list  function defined below.
     #   Include at least **   2   ** tests.
     #
@@ -48,6 +48,11 @@ def run_test_make_simple_list():
 
     # Test 2 (add your test here):
 
+    # Test 2:
+    expected = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+    actual = make_simple_list(12, 26)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
 
 def make_simple_list(m, n):
     """
@@ -68,9 +73,14 @@ def make_simple_list(m, n):
       :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+
+    list = []
+    for k in range(m, n + 1):
+        list = list + [k]
+    return list
 
 
 def run_test_make_simple_string():
